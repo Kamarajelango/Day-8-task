@@ -1,0 +1,56 @@
+// The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+// title, which is a String representing the title of the movie
+// studio, which is a String representing the studio that made the movie
+// rating, which is a String representing the rating of the movie (i.e. PG­13, R, etc)
+class Movie{
+    constructor(title,studio,rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+   
+}
+const movie1=new Movie("Casino Royale","Eon Productions","PG13");
+const movie2=new Movie("Beast","SunPicture","PG20");
+const movie3=new Movie("Valimai","Zee Production", "K");
+const movie4=new Movie("Doctor","SK Production", "M");
+console.log(movie1);
+console.log(movie2);
+console.log(movie3);
+console.log(movie4);
+
+
+//Write a “person” class to hold all the details.
+
+class Person{
+    constructor(name,age,city,course,institute){
+        this.Name=name;
+        this.Age=age;
+        this.City=city;
+        this.Course=course;
+        this.Institute=institute;
+    }
+   
+}
+const person=new Person("Kamaraj","23","Ariyalur","Full Stack Development","GUVI Geeks Network Pvt. Ltd");
+console.log(person);
+console.log(person.Course);
+
+
+//Write a “person” class to hold all the details.
+
+class Uber{
+    constructor(pickup,destination,totalkm){
+        this.Pickup=pickup;
+        this.Destination=destination;
+        this.Distance=totalkm;        
+    }
+    cost() {
+        let price = Customer.Distance * 12;
+        return (price)
+    }   
+}
+const Customer=new Uber("Ariyalur","Chennai",300);
+console.log("Price=" + Customer.cost());
+
+
